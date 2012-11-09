@@ -1,0 +1,45 @@
+.innn {
+	filter: none;
+}
+.nish2 {
+	margin-bottom:1px;
+}
+
+
+.aa {color:#ccc; size:12px;}
+
+.ro1 { margin-left:-142px; }
+
+
+.sign > a {
+  color: #C03 ;
+  	font-size: 12px;
+  text-decoration: none ;
+}
+.sign > a:hover {
+  color: #00F ;
+  font-size: 12px;
+  text-decoration: underline ;
+}
+.drop 
+{
+	margin-top:10px;
+}
+
+.drop > a {
+  font-size: 14px;
+    #letter-spacing: -1px;
+    #line-height: 1;
+  color: #222222 ;
+  text-decoration: none ;
+}
+.drop > a:hover {
+	font-size: 15px;
+  # letter-spacing: -1px;
+  # line-height: 1;
+  color: #F06921 !important ;
+  text-decoration: underline ;
+}
+
+	
+	
