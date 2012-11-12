@@ -962,11 +962,10 @@ form#newsletter input[type=submit] {
 	color:#DADADA;
 	background-color:#2E2E2E;
 	padding:20px 10px 10px;
-	border-top:solid 0px #666;
+	border-top:solid 5px #666;
 }
 .container-links h3{
-	color: #EEE;
-	text-shadow: 0px 1px 1px #000;
+	color: #fff;
 }
 .container-links img{
 	margin:5px 0;
