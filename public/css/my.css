@@ -1,3 +1,26 @@
+.sub-nav{
+	margin-top:8px;
+	margin-bottom: -8px;
+	background:#fff;
+	height:35px;
+	border-bottom:1px solid #CCC;
+	border-top:1px solid #f06921;
+		
+
+}
+.slide11{
+	position:relative;
+	width:100%;
+	background-color:#fff;
+	margin-top:8px;
+}
+
+
+
+nish{
+	font-size:15px;
+}
+
 .innn {
 	filter: none;
 }
@@ -30,7 +53,7 @@
   font-size: 14px;
     #letter-spacing: -1px;
     #line-height: 1;
-  color: #222222 ;
+  color: #666 ;
   text-decoration: none ;
 }
 .drop > a:hover {
