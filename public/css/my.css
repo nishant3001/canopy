@@ -1,3 +1,7 @@
+.active{
+	color:#f06921 !important;
+}
+
 .sub-nav{
 	margin-top:6px;
 	margin-bottom: -8px;
@@ -74,6 +78,50 @@ nish{
   width:100%;
   margin-top:8px;
 }
+
+.c
+{ color:#f06921;
+margin-right:10px;}
+.cc
+{ color:#f06921;
+}
+.icon-large {
+text-align: center;
+padding-right: 8px;
+}
+.ccdrop
+{ font-size: 15px;
+  # letter-spacing: -1px;
+  # line-height: 1;
+  color: #F06921 !important ;
+  text-decoration: underline ;
+}
+
+
+
+
+.dropcap {
+	
+    font-family: Georgia, serif !important;
+	margin-top:-10px!important;
+    font-size: 55px !important;
+    padding: 0 7px 5px 0 !important;
+    line-height: 1em !important;
+    float: left !important;
+    text-shadow: 1px 1px 0 #fafafa, 2px 2px 0 rgba(95, 149, 176, 0.5), 0 0 1px #fafafa !important;
+}
+
+.dropcapsmall {
+	
+    font-family: Georgia, serif;
+	margin-top:-10px;
+    font-size: 35px;
+    padding: 0 7px 5px 0;
+    line-height: 1em;
+    float: left;
+    text-shadow: 1px 1px 0 #fafafa, 2px 2px 0 rgba(95, 149, 176, 0.5), 0 0 1px #fafafa;
+}
+
 
 	
 	

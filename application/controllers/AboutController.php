@@ -18,6 +18,14 @@ class AboutController extends Zend_Controller_Action {
 		
 
     }
+			public function differentiatorsAction(){
+		
+
+    }
+			public function  alliancesAction(){
+		
+
+    }
 			public function socialAction(){
 		
 
