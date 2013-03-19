@@ -1,0 +1,97 @@
+<div class="main">
+	<div class="main-inner">
+
+	    <div class="container">
+        <!-- successfully messages -->
+			<?php if (is_array($this->internalMessages)): ?>
+            <?php foreach ($this->internalMessages as $message): ?>
+            <div class="alert alert-<?php echo $message->type; ?>">
+            <?php echo $message->message; ?>
+            </div>
+            <?php endforeach; ?>
+            <div class="clearfix"></div>
+            <?php endif; ?>
+        <!-- end successfully message -->
+	<!-- order listing -->
+
+<!-- end order listing -->    
+<!-- listing table -->    
+  <div class="row">
+    <div class="span12" >	
+        <div class="widget widget-table action-table">
+            <div class="widget-header">
+                <i class="icon-retweet"></i>
+                <h3>Listings</h3> <span style="margin-left:933px;"> <a href="/admin/listings/add">  <button class="btn"><i class="icon-plus"></i></button></a></span>
+            </div> <!-- /widget-header -->
+            </div>
+            <div class="widget-content">
+                <table class="table table-striped table-bordered">
+                         <thead>
+                              <tr>
+                                   <th><a href="<?php echo $this->url(array('sort'=>0, 'seq'=>$this->paramSort == 0 && $this->paramSequence !='desc' ? 'desc':'default'));?>">Listing name</a></th>
+                                   <th><a href="<?php echo $this->url(array('sort'=>0, 'seq'=>$this->paramSort == 0 && $this->paramSequence !='desc' ? 'desc':'default'));?>">House Style</a></th>
+                                   <th><a href="<?php echo $this->url(array('sort'=>0, 'seq'=>$this->paramSort == 0 && $this->paramSequence !='desc' ? 'desc':'default'));?>">list price</a></th>
+                                   <th><a href="<?php echo $this->url(array('sort'=>0, 'seq'=>$this->paramSort == 0 && $this->paramSequence !='desc' ? 'desc':'default'));?>">City</a></th>
+                                   <th><a href="<?php echo $this->url(array('sort'=>0, 'seq'=>$this->paramSort == 0 && $this->paramSequence !='desc' ? 'desc':'default'));?>">Zip Code</a></th>
+                                   <th><a href="<?php echo $this->url(array('sort'=>0, 'seq'=>$this->paramSort == 0 && $this->paramSequence !='desc' ? 'desc':'default'));?>">status</a></th>
+                                   <th><a href="<?php echo $this->url(array('sort'=>0, 'seq'=>$this->paramSort == 0 && $this->paramSequence !='desc' ? 'desc':'default'));?>">modified</a></th>
+								   <th class="td-actions" style="width:100px;">Edit</th>
+								</tr>
+							</thead>
+						<tbody>
+							<?php if(count($this->paginator)):?>
+	                        <?php foreach($this->paginator as $key=>$user):?>
+							<tr>
+								<td class="value"><span><a href="/admin/listings/add/id/<?php echo $user->id ?>"><?php echo $user->listing_type_id ?></a></span></td>
+								<td class="value"><span><a href="/admin/listings/add/id/<?php echo $user->id ?>"><?php echo $user->house_style ?></a></span></td>
+								<td class="value"><span><?php echo $user->list_price ?></span></td>
+								<td class="value"><span><?php echo $user->city_id ?></span></td>
+								<td class="value"><span><?php echo $user->zip_code ?></span></td>
+								<td class="value"><span><?php echo $user->status ?></span></td>
+				 				<td class="value"><span><?php echo $user->modified ?></span></td>
+								<td class="td-actions">
+                                         <div class="btn-group">
+                                          <a class="btn " href="#"><i class="icon-cog icon-white"></i> Action</a>
+                                          <a class="btn btn-primary dropdown-toggle setting" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                                          <ul class="dropdown-menu drop">
+                                            <li><a href="/admin/listings/add/id/<?php echo $user->id ?>"><i class="icon-pencil"></i> Edit</a></li>
+                                            <li><a href="#"><i class="icon-eye-open"></i> Preview</a></li>
+                                            <li><a href="#myModal" data-toggle="modal"><i class="icon-trash"></i> Delete</a></li>
+                                          </ul>                                         
+                                           </div>
+									</td>
+							</tr>
+                                <?php endforeach;?>
+                          <?php endif;?>							
+						</tbody>
+							</table>
+					</div> <!-- /widget-content -->
+				</div> <!-- /widget -->
+		      </div> <!-- /span12 -->
+          <?php echo $this->paginationControl($this->paginator, 'Sliding', 'partials/paginator.phtml', array('sort'=>$this->paramSort)); ?></div>
+	      </div> <!-- /row -->
+	    </div> <!-- /container -->
+	</div> <!-- /main-inner -->
+</div> <!-- /main -->
+<!-- conformation box for delete-->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Delete Sites</h3>
+  </div>
+  <div class="modal-body">
+    <p>Are You Sure Want to delete ?</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Cancel</button>
+    <a href="/admin/sites/delete/id/<?php echo $user->id?>" class="btn">Delete</a>
+  </div>
+</div>
+<!-- end conformation box -->
+
+<script>
+$("#type").change(function(){
+    location.href="/admin/reports/index/t/"+$("#type").val();
+});
+</script>			
+

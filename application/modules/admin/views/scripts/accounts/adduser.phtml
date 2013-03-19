@@ -1,0 +1,113 @@
+<div class="main">
+	<div class="main-inner">
+		<div class="container">
+			<div class="row">
+				<div class="span9">
+					<div class="widget ">
+						<div class="widget-header"> <i class="icon-user"></i>
+							<h3>Add User </h3>
+						</div>
+        <!-- /widget-header -->
+        <div class="widget-content">
+        </br></br>
+            <form id="basic" class="form-horizontal"  method="POST" action="" >
+                <fieldset>
+                    <?php echo $this->form->id; ?>
+        
+                    <div class="control-group <?php echo (array_key_exists('account_id', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->account_id; ?>
+                        <?php if (array_key_exists('account_id', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['account_id']; ?></span>
+                        <?php } ?>
+                    </div>
+        
+                    <div class="control-group <?php echo (array_key_exists('email', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->email; ?>
+                        <?php if (array_key_exists('email', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['email']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <!-- /control-group -->
+                    <div class="control-group <?php echo (array_key_exists('user_name', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->user_name; ?>
+                        <?php if (array_key_exists('user_name', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['user_name']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('fname', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->fname; ?>
+                        <?php if (array_key_exists('fname', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['fname']; ?></span>
+                        <?php } ?>
+                    </div>
+                   <div class="control-group <?php echo (array_key_exists('lname', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->lname; ?>
+                        <?php if (array_key_exists('lname', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['lname']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('password', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->password; ?>
+                        <?php if (array_key_exists('password', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['password']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('role', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->role; ?>
+                        <?php if (array_key_exists('role', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['role']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('phone', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->phone; ?>
+                        <?php if (array_key_exists('phone', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['phone']; ?></span>
+                        <?php } ?>
+                    </div>
+                    
+                    <div class="control-group <?php echo (array_key_exists('gender', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->gender; ?>
+                        <?php if (array_key_exists('gender', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['gender']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('active', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->active; ?>
+                        <?php if (array_key_exists('active', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['active']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('image', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->image; ?>
+                        <?php if (array_key_exists('image', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['image']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('updated', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->updated; ?>
+                        <?php if (array_key_exists('updated', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['updated']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="form-actions">
+                        <input type="submit" class="btn" value="Submit"/>
+                        <a href="/admin/accounts/user" class="btn">cancel</a>
+        
+                    </div>
+                    
+                </fieldset>
+            </form>
+                        </div>
+                        <!-- /widget-content --> 
+                	</div>
+                	<!-- /widget --> 
+        		</div>
+        		<!-- /span12 --> 
+            </div>
+            <!-- /row --> 
+        </div>
+        <!-- /container --> 
+	</div>
+	<!-- /main-inner --> 
+</div>
+<!-- /main --> 

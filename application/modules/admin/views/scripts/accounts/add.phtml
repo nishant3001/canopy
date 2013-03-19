@@ -1,0 +1,169 @@
+<style>
+pre{
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+background-color: white !important;
+font-size: 15px !important;
+}
+</style>
+<div class="main">
+	<div class="main-inner">
+		<div class="container">
+			<div class="row">
+				<div class="span9">
+					<div class="widget ">
+						<div class="widget-header"> <i class="icon-user"></i>
+							<h3>Add Accounts </h3>
+						</div>
+        <!-- /widget-header -->
+        <div class="widget-content">
+        </br></br>
+            <form id="basic" class="form-horizontal"  method="POST" action="/admin/accounts/add" >
+                <fieldset>
+                    <?php echo $this->form->id; ?>
+                    
+            <ul class="breadcrumb" style="width:300px; margin-left:20px;">
+                <li class="active" >
+                  <a class="brand" href="#">
+                    <h4><i class="icon-pencil"></i>General Detail</h4>
+                  </a>
+                </li>
+             </ul>
+                    <div class="control-group <?php echo (array_key_exists('company', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->company; ?>
+                        <?php if (array_key_exists('company', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['company']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('email', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->email; ?>
+                        <?php if (array_key_exists('email', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['email']; ?></span>
+                        <?php } ?>
+                    </div>
+                    
+            <ul class="breadcrumb" style="width:300px; margin-left:20px;">
+                <li class="active" >
+                  <a class="brand" href="#">
+                    <h4><i class="icon-pencil"></i>Contact Detail</h4>
+                  </a>
+                </li>
+             </ul>
+                    
+                    <div class="control-group <?php echo (array_key_exists('address', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->address; ?>
+                        <?php if (array_key_exists('address', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['address']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('address2', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->address2; ?>
+                        <?php if (array_key_exists('address2', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['address2']; ?></span>
+                        <?php } ?>
+                    </div>
+                    
+                    <div class="control-group <?php echo (array_key_exists('city', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->city; ?>
+                        <?php if (array_key_exists('city', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['city']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('state', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->state; ?>
+                        <?php if (array_key_exists('state', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['state']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('zip', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->zip; ?>
+                        <?php if (array_key_exists('zip', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['zip']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('primary_phone', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->primary_phone; ?>
+                        <?php if (array_key_exists('primary_phone', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['primary_phone']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('cell_phone', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->cell_phone; ?>
+                        <?php if (array_key_exists('cell_phone', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['cell_phone']; ?></span>
+                        <?php } ?>
+                    </div>
+                   <div class="control-group <?php echo (array_key_exists('fax', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->fax; ?>
+                        <?php if (array_key_exists('fax', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['fax']; ?></span>
+                        <?php } ?>
+                    </div>
+            <ul class="breadcrumb" style="width:300px; margin-left:20px;">
+                <li class="active" >
+                  <a class="brand" href="#">
+                    <h4><i class="icon-pencil"></i>Selling Detail</h4>
+                  </a>
+                </li>
+             </ul>
+                    
+                    <div class="control-group <?php echo (array_key_exists('reply_to', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->reply_to; ?>
+                        <?php if (array_key_exists('reply_to', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['reply_to']; ?></span>
+                        <?php } ?>
+                    </div>
+        
+                    <div class="control-group <?php echo (array_key_exists('html_signature', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->html_signature; ?>
+                        <?php if (array_key_exists('html_signature', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['html_signature']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <!-- /control-group -->
+                    <div class="control-group <?php echo (array_key_exists('report_template_id', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->report_template_id; ?>
+                        <?php if (array_key_exists('report_template_id', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['report_template_id']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('followup_template_id', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->followup_template_id; ?>
+                        <?php if (array_key_exists('followup_template_id', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['followup_template_id']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('followup_enabled', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->followup_enabled; ?>
+                        <?php if (array_key_exists('followup_enabled', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['followup_enabled']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('sms_enabled', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->sms_enabled; ?>
+                        <?php if (array_key_exists('sms_enabled', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['sms_enabled']; ?></span>
+                        <?php } ?>
+                    </div>
+
+                    <div class="form-actions">
+                        <input type="submit" class="btn" value="Submit"/>
+                        <a href="/admin/accounts" class="btn">cancel</a>
+        
+                    </div>
+                    
+                </fieldset>
+            </form>
+                        </div>
+                        <!-- /widget-content --> 
+                	</div>
+                	<!-- /widget --> 
+        		</div>
+        		<!-- /span12 --> 
+            </div>
+            <!-- /row --> 
+        </div>
+        <!-- /container --> 
+	</div>
+	<!-- /main-inner --> 
+</div>
+<!-- /main --> 

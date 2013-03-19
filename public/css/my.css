@@ -1,0 +1,229 @@
+.active{
+	color:#f06921 !important;
+}
+
+.sub-nav{
+	margin-top:6px;
+	margin-bottom: -8px;
+	background:#fff;
+	height:45px;
+	border-bottom:1px solid #ccc;
+	border-top:1px solid #f06921;
+		
+
+}
+.slide11{
+	position:relative;
+	width:100%;
+	background-color:#fff;
+	margin-top:8px;
+}
+
+
+
+.nish{
+	font-size:15px;
+}
+
+.innn {
+	filter: none;
+}
+.nish2 {
+	margin-bottom:1px;
+}
+
+
+
+
+
+.aa {color:#ccc; 
+size:12px;
+text-decoration: none ;}
+
+.aa> li > a
+{
+	color: #666 !important;
+  	font-size: 12px !important;
+  text-decoration: none !important;
+	
+}
+.aa> li > a:hover {
+  color: #f06921 !important ;
+-webkit-transition:color 1s ease;
+-moz-transition:color 1s ease;
+-o-transition:color 1s ease;
+transition:color 1s ease;
+
+  
+  font-size: 12px !important;
+  text-decoration: none !important;
+}
+
+
+.ro1 { margin-left:-142px; }
+
+
+.sign > a {
+  color: #333 ;
+  	font-size: 15px;
+  text-decoration: none ;
+  font-style:oblique !important;
+}
+.sign > a:hover {
+  color: #f06921 ;
+  font-size: 18px;
+  text-decoration: underline ;
+}
+.drop 
+{
+	margin-top:10px;
+	
+}
+
+.drop > a {
+  font-size: 14px;
+    #letter-spacing: -1px;
+    #line-height: 1;
+  color: #666 ;
+  text-decoration: none ;
+}
+.drop > a:hover {
+	font-size: 15px;
+  # letter-spacing: -1px;
+  # line-height: 1;
+  color: #F06921 !important ;
+  text-decoration: underline ;
+}
+<!-- ############################### -->
+.coretop {
+  background-color:#000000;
+  color:#DADADA;
+  opacity:0.9;
+  padding:0;
+  position:relative;
+  width:100%;
+  margin-top:8px;
+}
+
+.c
+{ color:#f06921;
+margin-right:10px;}
+.cc
+{ color:#f06921;
+}
+.icon-large {
+text-align: center;
+padding-right: 8px;
+}
+.ccdrop
+{ font-size: 15px;
+  # letter-spacing: -1px;
+  # line-height: 1;
+  color: #F06921 !important ;
+  text-decoration: underline ;
+}
+
+
+
+
+.dropcap {
+	
+    font-family: Georgia, serif !important;
+	margin-top:-10px!important;
+    font-size: 55px !important;
+    padding: 0 7px 5px 0 !important;
+    line-height: 1em !important;
+    float: left !important;
+    text-shadow: 1px 1px 0 #fafafa, 2px 2px 0 rgba(95, 149, 176, 0.5), 0 0 1px #fafafa !important;
+}
+
+.dropcapsmall {
+	
+    font-family: Georgia, serif;
+	margin-top: 1px;
+    font-size: 20px;
+    padding: 0 7px 5px 0;
+    line-height: 1em;
+    float: left;
+    text-shadow: 1px 1px 0 #fafafa, 2px 2px 0 rgba(95, 149, 176, 0.5), 0 0 1px #fafafa;
+}
+	.bor {
+    background: url("") repeat-x scroll 0 0 transparent;
+    height: 20px;
+    margin: 5px 0 5px;
+}
+
+.font12 {
+    font-size: 12px;
+}
+.font13 {
+    font-size: 13px;
+}
+.font14 {
+    font-size: 14px;
+}
+.font15 {
+    font-size: 15px;
+}
+.font16 {
+    font-size: 16px;
+}
+.font17 {
+    font-size: 17px;
+}
+.font18 {
+    font-size: 18px;
+}
+.font19 {
+    font-size: 19px;
+}
+.font20 {
+    font-size: 20px;
+}
+.font21 {
+    font-size: 21px;
+}
+.font22 {
+    font-size: 22px;
+}
+.font23 {
+    font-size: 23px;
+}
+.font24 {
+    font-size: 24px;
+}
+.font25 {
+    font-size: 25px;
+}
+.font26 {
+    font-size: 26px;
+}
+.font27 {
+    font-size: 27px;
+}
+.font28 {
+    font-size: 28px;
+}
+.font29 {
+    font-size: 29px;
+}
+.font30 {
+    font-size: 30px;
+}
+.font31 {
+    font-size: 31px;
+}
+.font32 {
+    font-size: 32px;
+}
+.font33 {
+    font-size: 33px;
+}
+.font34 {
+    font-size: 34px;
+}
+
+
+
+	
+	

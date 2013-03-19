@@ -1,0 +1,221 @@
+<?php
+$this->headTitle()->setSeparator(' - ');
+$this->headTitle('jameen.com');
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Project" />
+<meta name="keywords" content="" />
+<?php echo $this->headMeta(); ?><?php echo $this->headTitle(); ?>
+<?php echo $this->headLink() ?><?php echo $this->headStyle() ?>
+<!-- css -->
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+<link href="/css/font.css" rel="stylesheet">
+<link href="/css/font-awesome.css" rel="stylesheet">
+<link href="/css/admin/custom.css" rel="stylesheet">
+<link href="/css/admin/base-admin.css" rel="stylesheet">
+<link href="/css/admin/base-admin-responsive.css" rel="stylesheet">
+<script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<?php echo $this->headScript() ?>
+
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top" >
+	
+	<div class="navbar-inner">
+		
+		<div class="container">
+			
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			
+			<a class="brand" href="/">
+				Base Admin				
+			</a>		
+			
+			<div class="nav-collapse">
+				<ul class="nav pull-right">
+					<li class="dropdown">
+						
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="icon-cog"></i>
+							Settings
+							<b class="caret"></b>
+						</a>
+						
+						<ul class="dropdown-menu">
+							<li><a href="javascript:;">Account Settings</a></li>
+							<li><a href="javascript:;">Privacy Settings</a></li>
+							<li class="divider"></li>
+							<li><a href="javascript:;">Help</a></li>
+						</ul>
+						
+					</li>
+			
+					<li class="dropdown">
+						
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="icon-user"></i> 
+							<?php echo $this->user->getName();?>
+							<b class="caret"></b>
+						</a>
+						
+						<ul class="dropdown-menu">
+							<li><a href="javascript:;">My Profile</a></li>
+							<li><a href="javascript:;">My Groups</a></li>
+							<li class="divider"></li>
+							<li><a href="/admin/login/dont">Logout</a></li>
+						</ul>
+						
+					</li>
+				</ul>
+			
+				<!--<form class="navbar-search pull-right">
+					<input type="text" class="search-query" placeholder="Search">
+				</form>
+                -->
+				
+			</div><!--/.nav-collapse -->	
+	
+		</div> <!-- /container -->
+		
+	</div> <!-- /navbar-inner -->
+	
+</div> <!-- /navbar -->
+    
+<div class="subnavbar">
+
+	<div class="subnavbar-inner">
+	
+		<div class="container">
+
+			<ul class="mainnav">
+			
+				<li <?php if(Zend_Controller_Front::getInstance()->getRequest()->getControllerName() == 'index') :?>class="active" <?php endif;?>>
+					<a href="/admin/">
+					<i class="icon-th-large" style="background:#ooo"></i>
+						<span>Dashboard</span>
+					</a>	    				
+				</li>
+				
+				<li <?php if(Zend_Controller_Front::getInstance()->getRequest()->getControllerName() == 'accounts') :?>class="active" <?php endif;?>>
+					<a href="/admin/accounts">
+						<i class="icon-user"></i>
+						<span>Accounts</span>
+					</a>	    				
+				</li>
+				
+				<li <?php if(Zend_Controller_Front::getInstance()->getRequest()->getControllerName() == 'listings') :?>class="active" <?php endif;?>>					
+					<a href="/admin/listings">
+						<i class="icon-list"></i>
+						<span>Listings</span>
+					</a>	  				
+				</li>
+				
+				<li <?php if(Zend_Controller_Front::getInstance()->getRequest()->getControllerName() == 'sites') :?>class="active" <?php endif;?>>
+					<a href="/admin/sites">
+						<i class="icon-bar-chart"></i>
+						<span>Sites</span>
+					</a>    				
+				</li>
+				
+				<li <?php if(Zend_Controller_Front::getInstance()->getRequest()->getControllerName() == 'templates') :?>class="active" <?php endif;?>>					
+					<a href="/admin/templates">
+						<i class="icon-facetime-video"></i>
+						<span>Templates</span>
+					</a>  									
+				</li>
+				
+				<li <?php if(Zend_Controller_Front::getInstance()->getRequest()->getControllerName() == 'reports') :?>class="active" <?php endif;?>>					
+					<a href="/admin/reports">
+						<i class="icon-facetime-video"></i>
+						<span>Reports</span>
+					</a>  									
+				</li>
+
+
+				<li <?php if(Zend_Controller_Front::getInstance()->getRequest()->getControllerName() == 'followup') :?>class="active" <?php endif;?>>					
+					<a href="/admin/followup">
+						<i class="icon-retweet"></i>
+						<span>Follow-up email</span>
+					</a>  									
+				</li>
+
+				<li <?php if(Zend_Controller_Front::getInstance()->getRequest()->getControllerName() == 'newsletter') :?>class="active" <?php endif;?>>					
+					<a href="/admin/newsletter">
+						<i class="icon-book"></i>
+						<span>News letter</span>
+					</a>  									
+				</li>
+
+
+				<li <?php if(Zend_Controller_Front::getInstance()->getRequest()->getControllerName() == 'stats') :?>class="active" <?php endif;?>>					
+					<a href="/admin/stats">
+						<i class="icon-bar-chart"></i>
+						<span>Stats</span>
+					</a>  									
+				</li>
+
+				<li class="dropdown  <?php if(Zend_Controller_Front::getInstance()->getRequest()->getControllerName() == 'tools') :?>active <?php endif;?>">					
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-cog icon-white"></i>
+						<span>Tools</span>
+						<b class="caret"></b>
+					</a>	
+				
+					<ul class="dropdown-menu">
+						<li><a href="/admin/tools/emailb">Email blast</a></li>
+						<li><a href="/admin/tools/">User Account</a></li>
+						<li class="divider"></li>
+						<li><a href="/admin/tools/">Login</a></li>
+						<li><a href="/admin/tools/">Signup</a></li>
+						<li><a href="/admin/tools/">Error</a></li>
+					</ul>    				
+				</li>
+			
+			</ul>
+
+		</div> <!-- /container -->
+	
+	</div> <!-- /subnavbar-inner -->
+
+</div> <!-- /subnavbar -->
+
+
+<?php echo $this->layout()->content; ?>
+
+
+<div class="footer">
+	
+	<div class="footer-inner">
+		
+		<div class="container">
+			
+			<div class="row">
+				
+    			<div class="span12">
+    				&copy; 2012 <a href="http://bootstrapadmin.com">Base Admin</a>.
+    			</div> <!-- /span12 -->
+    			
+    		</div> <!-- /row -->
+    		
+		</div> <!-- /container -->
+		
+	</div> <!-- /footer-inner -->
+	
+</div> <!-- /footer -->
+    
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<div class="main">
+	<div class="main-inner">
+		<div class="container">
+			<div class="row">
+				<div class="span9">
+					<div class="widget ">
+						<div class="widget-header"> <i class="icon-user"></i>
+							<h3>Add Followup Email</h3>
+						</div>
+						<!-- /widget-header -->
+                        <div class="widget-content">
+                         </br></br>
+                            <form id="basic" class="form-horizontal"  method="POST" action="/admin/followup/add" >
+                                <fieldset>
+                                    <?php echo $this->form->id; ?>
+                                    
+                                    <div class="control-group <?php echo (array_key_exists('contact_group_id', $this->errors) ? 'error' : '') ?>">
+                                        <?php echo $this->form->contact_group_id; ?>
+                                        <?php if (array_key_exists('contact_group_id', $this->errors)) { ?>
+                                        <span class="help-inline controls cont"><?php echo $this->errors['contact_group_id']; ?></span>
+                                        <?php } ?>
+                                    </div>
+            
+                                    <div class="control-group <?php echo (array_key_exists('day', $this->errors) ? 'error' : '') ?>">
+                                        <?php echo $this->form->day; ?>
+                                        <?php if (array_key_exists('day', $this->errors)) { ?>
+                                        <span class="help-inline controls cont"><?php echo $this->errors['day']; ?></span>
+                                        <?php } ?>
+                                    </div>
+                                    <!-- /control-group -->
+                                    <div class="control-group <?php echo (array_key_exists('subject', $this->errors) ? 'error' : '') ?>">
+                                        <?php echo $this->form->subject; ?>
+                                        <?php if (array_key_exists('subject', $this->errors)) { ?>
+                                        <span class="help-inline controls cont"><?php echo $this->errors['subject']; ?></span>
+                                        <?php } ?>
+                                    </div>
+                                    <div class="control-group <?php echo (array_key_exists('email_body_html', $this->errors) ? 'error' : '') ?>">
+                                        <?php echo $this->form->email_body_html; ?>
+                                        <?php if (array_key_exists('email_body_html', $this->errors)) { ?>
+                                        <span class="help-inline controls cont"><?php echo $this->errors['email_body_html']; ?></span>
+                                        <?php } ?>
+                                    </div>
+                                    
+                                    <div class="form-actions">
+                                        <input type="submit" class="btn" value="Submit"/>
+                       					<a href="/admin/followup" class="btn">cancel</a>
+
+                                    </div>
+                                    
+                                </fieldset>
+                            </form>
+                        </div>
+                        <!-- /widget-content --> 
+                	</div>
+                	<!-- /widget --> 
+        		</div>
+        		<!-- /span12 --> 
+            </div>
+            <!-- /row --> 
+        </div>
+        <!-- /container --> 
+	</div>
+	<!-- /main-inner --> 
+</div>
+<!-- /main --> 

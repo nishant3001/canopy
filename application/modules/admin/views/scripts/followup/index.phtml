@@ -1,0 +1,102 @@
+<div class="main">
+
+<div class="main-inner">
+
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="stat">								
+    <label><b>Contacts Group</b></label>
+    <span class="value">
+          <select style="width: 150px;" id="contact_group" name="contact_group" class="forminputtext <?php echo isset($this->errors['title'])? 'error' : '';?>"  >
+            <option selected="selected" value="0">All</option>
+            <option <?php echo $this->contact_group == '1' ? 'selected="Selected"':'';?> value="1">Interested Buyer</option>
+            <option  <?php echo $this->contact_group == '2' ? 'selected="Selected"':'';?> value="2">Interested Sellers</option>
+            <option  <?php echo $this->contact_group == '3' ? 'selected="Selected"':'';?> value="3">Interested Buyer/Seller</option>
+            <option  <?php echo $this->contact_group == '4' ? 'selected="Selected"':'';?> value="4">Buyer/Seller Closed Deal</option>
+            <option  <?php echo $this->contact_group == '5' ? 'selected="Selected"':'';?> value="5">Interested Tenent</option>
+            <option  <?php echo $this->contact_group == '6' ? 'selected="Selected"':'';?> value="6">Buyer Spoke To</option>
+            <option  <?php echo $this->contact_group == '7' ? 'selected="Selected"':'';?> value="7">Seller Spoke To</option>
+            <option  <?php echo $this->contact_group == '8' ? 'selected="Selected"':'';?> value="8">Buyer Bought Property</option>
+            <option  <?php echo $this->contact_group == '9' ? 'selected="Selected"':'';?> value="9">Seller Sold Property</option>
+            <option  <?php echo $this->contact_group == '10' ? 'selected="Selected"':'';?> value="10">Deleted</option>
+          </select>	
+    </span>							
+</div> <!-- .stat -->
+</div>
+</div>
+  <div class="row">
+    <div class="span12" >	
+                
+    <?php if (is_array($this->internalMessages)): ?>
+        <?php foreach ($this->internalMessages as $message): ?>
+        <div class="alert alert-<?php echo $message->type; ?>">
+            <?php echo $message->message; ?>
+        </div>
+        <?php endforeach; ?>
+        <div class="clearfix"></div>
+    <?php endif; ?>
+    
+        <div class="widget widget-table action-table">
+            <div class="widget-header">
+                <i class="icon-retweet"></i>
+                <h3>followup email</h3> <span style="margin-left:933px;"> <a href="/admin/followup/add">  <button class="btn"><i class="icon-plus"></i></button></a></span>
+            </div> <!-- /widget-header -->
+            </div>
+            <div class="widget-content">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th><a href="<?php echo $this->url(array('sort'=>0, 'seq'=>$this->paramSort == 0 && $this->paramSequence !='desc' ? 'desc':'default'));?>">Day</a></th>
+                            <th><a href="<?php echo $this->url(array('sort'=>0, 'seq'=>$this->paramSort == 0 && $this->paramSequence !='desc' ? 'desc':'default'));?>">Contact group name</a></th>
+                            <th><a href="<?php echo $this->url(array('sort'=>0, 'seq'=>$this->paramSort == 0 && $this->paramSequence !='desc' ? 'desc':'default'));?>">Subject</a></th>
+                            <th><a href="<?php echo $this->url(array('sort'=>0, 'seq'=>$this->paramSort == 0 && $this->paramSequence !='desc' ? 'desc':'default'));?>">Email body html</a></th>
+                            <th class="td-actions" style="width:100px;">Edit</th>
+                        </tr>
+                    </thead>
+                <tbody>
+                    <?php if(count($this->paginator)):?>
+                        <?php foreach($this->paginator as $key=>$user):?>
+                    <tr>
+                        <td class="value"><span><?php echo $user->day ?></span></td>
+                        <td class="value"><span><?php echo $user->group_name ?></span></td>
+                        <td class="value"><span><a href="/admin/followup/add/id/<?php echo $user->id ?>"><?php echo $user->subject ?></a></span></td>
+                        <td class="value"><span><?php echo $user->email_body_html?></span></td>
+                        <td class="td-actions">
+                             <div class="btn-group">
+                              <a class="btn " href="#"><i class="icon-cog icon-white"></i> Action</a>
+                              <a class="btn btn-primary dropdown-toggle setting" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                              <ul class="dropdown-menu drop">
+                                <li><a href="/admin/followup/add/id/<?php echo $user->id?>"><i class="icon-pencil"></i> Edit</a></li>
+                                <li><a href="#"><i class="icon-eye-open"></i> Preview</a></li>
+                                <li><a href="/admin/followup/delete/id/<?php echo $user->id?>"><i class="icon-trash"></i> Delete</a></li>
+                              </ul>
+                            </div>
+                            </td>
+                    </tr>
+                        <?php endforeach;?>
+                  <?php endif;?>							
+                </tbody>
+                    </table>
+            </div> <!-- /widget-content -->
+        </div> <!-- /widget -->
+      </div> <!-- /span6 -->
+  <div style="clear:both"><?php echo $this->paginationControl($this->paginator, 'Sliding', 'partials/paginator.phtml', array('sort'=>$this->paramSort)); ?></div>
+  </div> <!-- /row -->
+
+</div> <!-- /container -->
+</div> <!-- /main-inner -->
+</div> <!-- /main -->
+
+
+<script>
+$("#contact_group").change(function(){
+    location.href="/admin/followup/index/f/"+$("#contact_group").val();
+    
+});
+
+
+
+</script>			
+
+

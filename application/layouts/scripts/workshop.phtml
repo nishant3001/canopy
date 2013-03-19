@@ -1,0 +1,143 @@
+<?php
+$this->headTitle()->setSeparator(' - ');
+$this->headTitle('Project.com');
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Project" />
+<meta name="keywords" content="Search Tutor" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="">
+
+<?php echo $this->headMeta(); ?><?php echo $this->headTitle(); ?>
+<?php echo $this->headLink() ?><?php echo $this->headStyle() ?>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="/css/color-button.css" />
+    <link type="text/css" rel="stylesheet" href="/css/workshop/style.css" />
+	<link type="text/css" rel="stylesheet" href="/css/workshop/bootstrap-responsive.min.css" />
+
+
+	<!-- js Boots_from -->
+	<script src="/js/jquery-1.7.2.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/custom.js"></script>
+	<!-- end Boots_from -->
+<?php echo $this->headScript() ?>
+<style>
+.navbar .nav > li > a {
+  color:#999999; }
+  </style>
+</head>
+
+<body >
+
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+					<a class="brand" href="./dash.html">WORKSHOP</a>
+					<div class="nav-collapse">
+						<ul class="nav">
+							<li class="active">
+								<a href="./dash.html">Dashboard</a>
+							</li>
+							<li>
+								<a href="#">Single Menu</a>
+							</li>
+							<li>
+								<a class="caption" data-content="And here's some amazing content. It's very engaging. right?" rel="popover"  href="#" data-original-title="A Title">
+									Menu With Caption
+								</a>
+							</li>
+							<li class="dropdown">
+								<a data-toggle="dropdown" class="dropdown-toggle " href="#">Dropdown Menu<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">Menu</a>
+									</li>
+									<li>
+										<a href="#">Another Menu</a>
+									</li>
+									<li>
+										<a href="#">Another Menu Too</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<a href="#">Separated Menu</a>
+									</li>
+									<li>										
+										<a href="#" class="caption" data-content="And here's some amazing content. It's very engaging. right?" rel="popover"  href="#" data-original-title="A Title">Separated Menu With Caption </a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="nav pull-right">
+							<li>
+								<a href="#"><span class="badge badge-warning">23</span></a>
+							</li>
+							<li class="divider-vertical"></li>
+							<li>
+								<a>May 23, 2012</a>
+							</li>
+							<li class="divider-vertical"></li>
+							<li class="dropdown">
+								<a data-toggle="dropdown" class="dropdown-toggle " href="#">Hello New Member <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="./account.html"><i class="icon-user"></i> Account Setting  </a>
+									</li>
+									<li>
+										<a href="./change_password.html"><i class="icon-lock"></i> Change Password</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<a href="./"><i class="icon-off"></i> Logout</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+<?php echo $this->layout()->content; ?>
+
+
+
+			<hr/>
+			<footer>
+				<center><p>
+					Jameen &copy; 2012
+				</p></center>
+			</footer>
+		</div>
+<!-- end footer -->
+
+</body>
+</html>
+<!--
+
+<div class="dropdown">
+  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown trigger</a>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+    ...
+  </ul>
+</div>
+To keep URLs intact, use the data-target attribute instead of href="#".
+
+<div class="dropdown">
+  <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+    Dropdown
+    <b class="caret"></b>
+  </a>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+    ...
+  </ul>
+</div>
+-->

@@ -1,0 +1,89 @@
+<div class="main">
+	<div class="main-inner">
+		<div class="container">
+			<div class="row">
+				<div class="span9">
+					<div class="widget ">
+						<div class="widget-header"> <i class="icon-user"></i>
+							<h3>Add Reports </h3>
+						</div>
+        <!-- /widget-header -->
+        <div class="widget-content">
+        </br></br>
+            <form id="basic" class="form-horizontal"  method="POST" action="/admin/reports/add" >
+                <fieldset>
+                    <?php echo $this->form->id; ?>
+        
+                    <div class="control-group <?php echo (array_key_exists('type', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->type; ?>
+                        <?php if (array_key_exists('type', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['type']; ?></span>
+                        <?php } ?>
+                    </div>
+        
+                    <div class="control-group <?php echo (array_key_exists('day', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->title; ?>
+                        <?php if (array_key_exists('title', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['title']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <!-- /control-group -->
+                    <div class="control-group <?php echo (array_key_exists('seo_title', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->seo_title; ?>
+                        <?php if (array_key_exists('seo_title', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['seo_title']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('preview_html', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->preview_html; ?>
+                        <?php if (array_key_exists('preview_html', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['preview_html']; ?></span>
+                        <?php } ?>
+                    </div>
+                   <div class="control-group <?php echo (array_key_exists('full_html', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->full_html; ?>
+                        <?php if (array_key_exists('full_html', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['full_html']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('is_active', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->is_active; ?>
+                        <?php if (array_key_exists('is_active', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['is_active']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('show_form', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->show_form; ?>
+                        <?php if (array_key_exists('show_form', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['show_form']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('success_url', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->success_url; ?>
+                        <?php if (array_key_exists('success_url', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['success_url']; ?></span>
+                        <?php } ?>
+                    </div>
+
+                    <div class="form-actions">
+                        <input type="submit" class="btn" value="Submit"/>
+                        <a href="/admin/reports" class="btn">cancel</a>
+        
+                    </div>
+                    
+                </fieldset>
+            </form>
+                        </div>
+                        <!-- /widget-content --> 
+                	</div>
+                	<!-- /widget --> 
+        		</div>
+        		<!-- /span12 --> 
+            </div>
+            <!-- /row --> 
+        </div>
+        <!-- /container --> 
+	</div>
+	<!-- /main-inner --> 
+</div>
+<!-- /main --> 

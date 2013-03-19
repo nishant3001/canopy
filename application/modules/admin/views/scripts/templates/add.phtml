@@ -1,0 +1,176 @@
+<div class="main">
+	<div class="main-inner">
+		<div class="container">
+			<div class="row">
+				<div class="span9">
+					<div class="widget ">
+						<div class="widget-header"> <i class="icon-user"></i>
+							<h3>Add Template </h3>
+						</div>
+        <!-- /widget-header -->
+        <div class="widget-content">
+        </br></br>
+            <form id="basic" class="form-horizontal"  method="POST" action="/admin/templates/add" >
+                <fieldset>
+                    <?php echo $this->form->id; ?>
+        
+                    <div class="control-group <?php echo (array_key_exists('template_name', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->template_name; ?>
+                        <?php if (array_key_exists('template_name', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['template_name']; ?></span>
+                        <?php } ?>
+                    </div>
+        
+                    <div class="control-group <?php echo (array_key_exists('active', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->active; ?>
+                        <?php if (array_key_exists('active', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['active']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <!-- /control-group -->
+                    <div class="control-group <?php echo (array_key_exists('template_html', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->template_html; ?>
+                        <?php if (array_key_exists('template_html', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['template_html']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('body_html', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->body_html; ?>
+                        <?php if (array_key_exists('body_html', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['body_html']; ?></span>
+                        <?php } ?>
+                    </div>
+                   <div class="control-group <?php echo (array_key_exists('property_listings_top_html', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->property_listings_top_html; ?>
+                        <?php if (array_key_exists('property_listings_top_html', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['property_listings_top_html']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('property_listings_html', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->property_listings_html; ?>
+                        <?php if (array_key_exists('property_listings_html', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['property_listings_html']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('property_listings_bottom_html', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->property_listings_bottom_html; ?>
+                        <?php if (array_key_exists('property_listings_bottom_html', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['property_listings_bottom_html']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('property_detail_html', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->property_detail_html; ?>
+                        <?php if (array_key_exists('property_detail_html', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['property_detail_html']; ?></span>
+                        <?php } ?>
+                    </div>
+                    
+                    <div class="control-group <?php echo (array_key_exists('css', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->css; ?>
+                        <?php if (array_key_exists('css', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['css']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('buyer_html', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->buyer_html; ?>
+                        <?php if (array_key_exists('buyer_html', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['buyer_html']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('seller_html', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->seller_html; ?>
+                        <?php if (array_key_exists('seller_html', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['seller_html']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('splash_html', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->splash_html; ?>
+                        <?php if (array_key_exists('splash_html', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['splash_html']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('login_html', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->login_html; ?>
+                        <?php if (array_key_exists('login_html', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['login_html']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('send_to_friend_html', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->send_to_friend_html; ?>
+                        <?php if (array_key_exists('send_to_friend_html', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['send_to_friend_html']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('form_short', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->form_short; ?>
+                        <?php if (array_key_exists('form_short', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['form_short']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('form_long', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->form_long; ?>
+                        <?php if (array_key_exists('form_long', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['form_long']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('form_buyer', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->form_buyer; ?>
+                        <?php if (array_key_exists('form_buyer', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['form_buyer']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('form_seller', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->form_seller; ?>
+                        <?php if (array_key_exists('form_seller', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['form_seller']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('form_contact', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->form_contact; ?>
+                        <?php if (array_key_exists('form_contact', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['form_contact']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('form_custom1', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->form_custom1; ?>
+                        <?php if (array_key_exists('form_custom1', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['form_custom1']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('form_custom2', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->form_custom2; ?>
+                        <?php if (array_key_exists('form_custom2', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['form_custom2']; ?></span>
+                        <?php } ?>
+                    </div>
+                    <div class="control-group <?php echo (array_key_exists('form_custom3', $this->errors) ? 'error' : '') ?>">
+                        <?php echo $this->form->form_custom3; ?>
+                        <?php if (array_key_exists('form_custom3', $this->errors)) { ?>
+                        <span class="help-inline controls cont"><?php echo $this->errors['form_custom3']; ?></span>
+                        <?php } ?>
+                    </div>
+
+
+
+                    <div class="form-actions">
+                        <input type="submit" class="btn" value="Submit"/>
+                        <a href="/admin/templates" class="btn">cancel</a>
+        
+                    </div>
+                    
+                </fieldset>
+            </form>
+                        </div>
+                        <!-- /widget-content --> 
+                	</div>
+                	<!-- /widget --> 
+        		</div>
+        		<!-- /span12 --> 
+            </div>
+            <!-- /row --> 
+        </div>
+        <!-- /container --> 
+	</div>
+	<!-- /main-inner --> 
+</div>
+<!-- /main --> 

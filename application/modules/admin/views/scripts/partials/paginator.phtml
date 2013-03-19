@@ -1,0 +1,17 @@
+<div class="pagination">
+<?php if ($this->pageCount): ?>
+<ul>
+	<?php if (isset($this->previous)): ?>
+		    <li><a href="<?php echo $this->url(array('page' => $this->previous, 'sort'=>$this->sort, 'seq'=>$this->seq, 'q'=>$this->q)); ?>"><span class="prev"><?php echo 'prev'; ?></span></a></li>
+	<?php endif;?>
+			<li ><a href="<?php echo $this->url(array('page' => $this->next, 'sort'=>$this->sort, 'seq'=>$this->seq, 'q'=>$this->q)); ?>">1</a></li>
+			<li><a href="<?php echo $this->url(array('page' => $this->next, 'sort'=>$this->sort, 'seq'=>$this->seq, 'q'=>$this->q)); ?>">2</a></li>
+			<li><a href="<?php echo $this->url(array('page' => $this->next, 'sort'=>$this->sort, 'seq'=>$this->seq, 'q'=>$this->q)); ?>">3</a></li>
+    <?php if (isset($this->next)): ?>
+        <li><a href="<?php echo $this->url(array('page' => $this->next, 'sort'=>$this->sort, 'seq'=>$this->seq, 'q'=>$this->q)); ?>"><span class="next"><?php echo 'next'; ?></span></a></li>
+	<?php endif;?>
+							
+</ul>
+</div>
+<?php endif;?>
+
