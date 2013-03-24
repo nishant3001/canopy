@@ -57,14 +57,7 @@
 								 })
 								 
 								 
-								 $(".sub-nav").mouseleave(function (event) {
-								 	 $("#sub").hide();
-									 $("#sub1").hide();
-									 $("#sub2").hide();
-									 $("#sub3").hide();
-									 $("#sub4").hide();
-
-																 })
+								
 								 
 								 
 								 
@@ -82,7 +75,12 @@
 	
 	
 	$(document).ready(function() {
-		var url_path = 'http://dys.localhost';
+		var url_path = 'http://canopy.localhost' || 'http://canopy.gsquire.com';
+		
+		
+		
+		//alert(window.location);
+		
     // to show it in an alert window
    // alert(window.location);
 
@@ -91,7 +89,15 @@
 	
 	if ( loc ==url_path + '/')
 	{
-	  $("#home1").addClass("ccdrop");	
+	  $("#home1").addClass("ccdrop");
+	   $(".sub-nav").mouseleave(function (event) {
+								 	 $("#sub").hide();
+									 $("#sub1").hide();
+									 $("#sub2").hide();
+									 $("#sub3").hide();
+									 $("#sub4").hide();
+
+																 })	
 	
 	}
 	
