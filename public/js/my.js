@@ -75,7 +75,7 @@
 	
 	
 	$(document).ready(function() {
-		var url_path = 'http://canopy.localhost' || 'http://canopy.gsquire.com';
+		var url_path = 'http://canopy.gsquire.com';
 		
 		
 		
