@@ -194,8 +194,8 @@ $this->headTitle('CanopyOne');
 
 
 <!-- Modal -->
-<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style=" width: 32%; left: 58%;">
+  <div class="modal-header head_email">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
     <h3 id="myModalLabel"> My CanopyOne Login </h3>
   </div>
@@ -205,17 +205,29 @@ $this->headTitle('CanopyOne');
 			<div class="login-content span4 mod">
 				
 				<form class="well">
-					<label>Username</label>
-					<input type="text" placeholder="Type something…" class="input">
-					<label>Password</label>
-					<input type="text" placeholder="Type something…" class="input">
-
-					<label class="checkbox">
+                <table>
+                <tr>
+					<td><label>Username</label></td>
+                    <td> &nbsp; &nbsp;</td>
+					<td><input type="text" placeholder="Type something…" class="input"></td>
+                </tr>
+                <tr>
+					<td><label>Password</label></td>
+					<td> &nbsp; &nbsp;</td>
+					<td><input type="text" placeholder="Type something…" class="input"></td>
+                 </tr>
+                    <tr><td> &nbsp;</td>					
+					<td> &nbsp; &nbsp;</td>
+                    <td>
 				    	<input type="checkbox"> Remember Password
-					</label>
-				  	<a class="btn btn-info" type="submit" href="index.html">Log in</a>
-				  	
-				</form>	
+					</td>
+                    </tr>
+                    <tr><td> &nbsp; </td></tr>
+                    <tr><td> &nbsp;</td><td> &nbsp; &nbsp;</td>
+
+    					<td><button class="btn btn-warning">Sign Up</button>
+   					 <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+				</td></tr></table></form>	
 			</div>
 		<div>
 	</div>
@@ -223,47 +235,52 @@ $this->headTitle('CanopyOne');
     
     </p>
   </div>
-  <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-    <button class="btn btn-primary">Sign Up</button>
-  </div>
 </div>
 <!-- email --->
-<div id="email" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
+<div id="email" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style=" width: 37%;">
+  <div class="modal-header head_email">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Modal header</h3>
+    <h3 id="myModalLabel">SEND A MESSAGE</h3>
   </div>
   <div class="modal-body">
-    <p>
     
-    <form name="contactform" method="post" action="send_form_email.php">
-<table width="450px">
+    
+    <form name="contactform" method="post" action="send_form_email.php" class="email_form">
+    
+<table >
 <tbody>
 <tr>
 <td valign="top"><label for="first_name">First Name * </font></label></td>
-<td valign="top"><input type="text" name="first_name" maxlength="50" size="30" /></td></tr>
+<td> &nbsp; &nbsp;</td>
+<td valign="top"><input type="text" name="first_name" maxlength="50" size="30" class="span3"/></td></tr>
 <tr>
 <td valign="top"><label for="last_name">Last Name *</font></label></td>
-<td valign="top"><input type="text" name="last_name" maxlength="50" size="30" /></td></tr>
+<td> &nbsp; &nbsp;</td>
+<td valign="top"><input type="text" name="last_name" maxlength="50" size="30" class="span3"/></td></tr>
 <tr>
 <td valign="top"><label for="email">Email Address *</font></label></td>
-<td valign="top"><input type="text" name="email" maxlength="80" size="30" /></td></tr>
+<td> &nbsp; &nbsp;</td>
+<td valign="top"><input type="text" name="email" maxlength="80" size="30" class="span3"/></td></tr>
 <tr>
 <td valign="top"><label for="telephone">Telephone Number</font></label></td>
-<td valign="top"><input type="text" name="telephone" maxlength="30" size="30" /></td></tr>
+<td> &nbsp; &nbsp;</td>
+<td valign="top"><input type="text" name="telephone" maxlength="30" size="30" class="span3"/></td></tr>
 <tr>
 <td valign="top"><label for=" comments ">Message *</font></label></td>
-<td valign="top"><textarea name="comments" maxlength="1000" cols="25" rows="6"></textarea></td></tr>
+<td> &nbsp; &nbsp;</td>
+<td valign="top"><textarea name="comments" maxlength="1000" class="span3"></textarea></td></tr>
 <tr>
 <td colspan="2" style="text-align: center">   </td></tr></tbody></table></form>
     
     
-    </p>
+    
   </div>
   <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-    <input type="submit" class="btn btn-primary" value="submit">
+  <div style="">
+  <button  class="btn btn-warning " value="submit"> Submit</button>
+    <button class="btn " data-dismiss="modal" aria-hidden="true">Close</button>
+   
+    
   </div>
 </div>
 <!-- end email model -->

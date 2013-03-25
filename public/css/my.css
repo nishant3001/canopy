@@ -223,6 +223,21 @@ padding-right: 8px;
     font-size: 34px;
 }
 
+/*email header */
+
+.head_email {
+    padding: 24px 15px ;
+}
+
+
+.email_form {
+    margin: 0 0 -8px !important;
+    padding: 0 20px;
+   
+}
+	
+
+
 
 
 	
