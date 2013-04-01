@@ -5,3 +5,11 @@ RewriteCond %{REQUEST_FILENAME} -l [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^.*$ - [NC,L]
 RewriteRule ^.*$ index.php [NC,L]
+
+RewriteCond %{ENV:GEOIP_COUNTRY_CODE} ^CA$
+
+RewriteRule ^(.*)$ http://www.canopy.ca$1 [L] 
+
+RewriteEngine on RewriteCond %{ENV:GEOIP_COUNTRY_CODE} ^IN$
+
+RewriteRule ^(.*)$ http://www.canopy.in$1 [L]
