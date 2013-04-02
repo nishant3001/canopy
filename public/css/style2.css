@@ -146,7 +146,7 @@ background:url('../img/logo.png') no-repeat;
 .navbar-inner, 
 .nav {
 	float: left;
-	background: #fff !important;
+	background: none !important;
 	border: none;
 	-webkit-box-shadow: none;
      -moz-box-shadow: none;
