@@ -72,48 +72,48 @@
 	
 	function setTime1(){
 
-				 setTimeout(function(){$("#sub1").show()},300)
+				 setTimeout($("#sub1").hide(),300)
 
-				 setTimeout(function(){$("#sub2").show()},300)
+				 setTimeout(function(){$("#sub2").hide()},300)
 
-		 setTimeout(function(){$("#sub3").show()},300)
-		 setTimeout(function(){$("#sub4").show()},300)
+		 setTimeout(function(){$("#sub3").hide()},300)
+		 setTimeout(function(){$("#sub4").hide()},300)
 		}
 		function setTime2(){
-				 setTimeout(function(){$("#sub").show()},300)
+				 setTimeout(function(){$("#sub").hide()},300)
 
 
-				 setTimeout(function(){$("#sub2").show()},300)
+				 setTimeout(function(){$("#sub2").hide()},300)
 
-		 setTimeout(function(){$("#sub3").show()},300)
-		 setTimeout(function(){$("#sub4").show()},300)
+		 setTimeout(function(){$("#sub3").hide()},300)
+		 setTimeout(function(){$("#sub4").hide()},300)
 		}
 	function setTime3(){
-				 setTimeout(function(){$("#sub").show()},300)
+				 setTimeout(function(){$("#sub").hide()},300)
 
-				 setTimeout(function(){$("#sub1").show()},300)
+				 setTimeout(function(){$("#sub1").hide()},300)
 
 
-		 setTimeout(function(){$("#sub3").show()},300)
-		 setTimeout(function(){$("#sub4").show()},300)
+		 setTimeout(function(){$("#sub3").hide()},300)
+		 setTimeout(function(){$("#sub4").hide()},300)
 		}
 	function setTime4(){
-				 setTimeout(function(){$("#sub").show()},300)
+				 setTimeout(function(){$("#sub").hide()},300)
 
-				 setTimeout(function(){$("#sub1").show()},300)
+				 setTimeout(function(){$("#sub1").hide()},300)
 
-				 setTimeout(function(){$("#sub2").show()},300)
+				 setTimeout(function(){$("#sub2").hide()},300)
 
-		 setTimeout(function(){$("#sub4").show()},300)
+		 setTimeout(function(){$("#sub4").hide()},300)
 		}
 	function setTime5(){
-				 setTimeout(function(){$("#sub").show()},300)
+				 setTimeout(function(){$("#sub").hide()},300)
 
-				 setTimeout(function(){$("#sub1").show()},300)
+				 setTimeout(function(){$("#sub1").hide()},300)
 
-				 setTimeout(function(){$("#sub2").show()},300)
+				 setTimeout(function(){$("#sub2").hide()},300)
 
-		 setTimeout(function(){$("#sub3").show()},300)
+		 setTimeout(function(){$("#sub3").hide()},300)
 		}
 
 	
