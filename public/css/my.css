@@ -10,7 +10,9 @@
 	border-bottom:1px solid #ccc;
 	border-top:1px solid #f06921;
 	position: absolute;
-    z-index: 99999999;	
+    z-index: 99999999;
+	width:100%;
+		
 
 }
 .slide11{
